@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reamur"
+    android:background="@drawable/dwabel">
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="620dp"
+        android:background="@drawable/barrr"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:id="@+id/liieer">
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:text="MENGHITUNG REAMUR"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="319dp"
+            android:layout_height="3dp"
+            android:background="@color/black"
+            android:layout_marginTop="12dp"
+            />
+
+        <EditText
+            android:layout_width="325dp"
+            android:layout_height="80dp"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/border"
+            android:hint="REAMUR"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+
+            android:id="@+id/num1"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/hasil"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3ABEF9"
+
+            android:onClick="convertTemperature"
+
+            android:text="KONVUSEN"
+            android:textColor="@color/black"
+            android:textSize="29dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:text="celsius:"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+
+        android:layout_below="@+id/liieer"
+        android:id="@+id/fahneinheit"
+        />
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        android:layout_marginTop="58dp"
+
+        android:layout_below="@+id/liieer"
+        android:layout_toRightOf="@+id/fahneinheit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="HASIL"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+
+        android:id="@+id/celsius"
+
+        android:layout_toRightOf="@id/fahneinheit"
+        android:layout_below="@id/liieer"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:text="fahneinheit : "
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+
+        android:layout_below="@+id/fahneinheit"
+        android:id="@+id/lelvin"
+        />
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        android:layout_marginTop="58dp"
+
+        android:layout_below="@+id/fahneinheit"
+        android:layout_toRightOf="@+id/lelvin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="HASIL"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+
+        android:id="@+id/fahn"
+
+        android:layout_toRightOf="@id/lelvin"
+        android:layout_below="@id/fahneinheit"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:text="kelvin : "
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/lelvin"
+        android:id="@+id/Reamur"
+        />
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        android:layout_marginTop="58dp"
+
+        android:layout_below="@+id/lelvin"
+        android:layout_toRightOf="@+id/Reamur"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="HASIL"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+
+        android:id="@+id/klv"
+
+        android:layout_toRightOf="@id/Reamur"
+        android:layout_below="@id/lelvin"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="610dp">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3ABEF9"
+
+            android:onClick="bck"
+
+            android:text="KEMBALI"
+            android:textColor="@color/black"
+            android:textSize="29dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
