@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         remur.setText(String.format("%.2f", reamur));
     }
 
+//    inten untuk pindah layout, dari menggunakan onclik
     public void fht (View v) {
         Intent intent = new Intent(this, fahneinheit.class);
         startActivity(intent);
