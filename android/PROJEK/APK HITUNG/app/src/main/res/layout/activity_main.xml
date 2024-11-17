@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_width="351dp"
+        android:layout_height="80dp"
+        android:hint=" MASUKAN ANGKA 1"
+        android:inputType="number"
+        android:textColor="#566573"
+        android:textColorHint="#566573"
+        android:id="@+id/num1"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:textAlignment="center"
+    />
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_width="351dp"
+        android:layout_height="80dp"
+        android:hint=" MASUKAN ANGKA 2"
+        android:layout_below="@+id/num1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/num2"
+        android:inputType="number"
+        android:textSize="30dp"
+        android:textColor="#566573"
+        android:textColorHint="#566573"
+        android:background="@drawable/border"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/result"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="21dp"
+        android:hint="HASIL"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="39dp"
+
+        />
+
+    <Button
+        android:layout_marginLeft="9dp"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:hint="+"
+        android:id="@+id/add"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#8e44ad"
+        />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:hint="---"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#8e44ad"
+
+        android:id="@+id/add01"
+        android:layout_below="@+id/result"
+        android:layout_toRightOf="@+id/add"
+        android:textColorHint="@color/white"
+        />
+
+  <Button
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#8e44ad"
+      android:layout_centerHorizontal="true"
+      android:textColorHint="@color/white"
+      android:hint="%"
+      android:textSize="25dp"
+      android:layout_below="@+id/add02"
+      android:id="@+id/persen"
+      />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:hint="X"
+        android:id="@+id/add02"
+        android:layout_below="@+id/result"
+        android:layout_toRightOf="@+id/add01"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#8e44ad"
+        />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:hint=":"
+        android:id="@+id/add03"
+        android:layout_below="@+id/result"
+        android:layout_toRightOf="@+id/add02"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#8e44ad"
+        />
+</RelativeLayout>
