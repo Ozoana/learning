@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity"
+    android:orientation="vertical"
+    android:background="@color/putih_abu"
+    >
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/biruUT">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btback"
+            android:layout_marginTop="38dp"
+            android:onClick="btn_bck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="38dp"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:textSize="26dp" />
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+            <TextView
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambahkan jadwal baru"
+            android:textSize="30sp"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+                android:textColor="@color/black"
+            />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="3dp"
+                android:background="@color/black"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Silakan Masukan jadwal Baru anda"
+                android:textSize="17dp"
+                android:textStyle="italic"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kegiatan"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+
+                />
+
+            <EditText
+                android:layout_marginTop="2dp"
+                android:layout_width="200dp"
+                android:layout_height="45sp"
+                android:hint="Kegiatan"
+                android:textColorHint="@color/abu"
+                android:textColor="@color/black"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+
+                android:id="@+id/input_kgt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Tanggal &amp; Waktu"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginRight="5sp"
+                />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:layout_marginTop="2dp"
+                        android:layout_width="150dp"
+                        android:layout_height="45sp"
+                        android:hint="Tanggal"
+                        android:textColorHint="@color/abu"
+                        android:textColor="@color/black"
+                        android:background="@drawable/border"
+                        android:textAlignment="center"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:inputType="none"
+
+                        android:id="@+id/input_tgl"
+                        />
+
+                    <View
+                        android:layout_width="11sp"
+                        android:layout_height="10dp"
+                        android:background="@color/putih_abu"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <EditText
+                        android:layout_marginTop="2dp"
+                        android:layout_width="150dp"
+                        android:layout_height="45sp"
+                        android:hint="Waktu"
+                        android:textColorHint="@color/abu"
+                        android:textColor="@color/black"
+                        android:background="@drawable/border"
+                        android:textAlignment="center"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:inputType="none"
+
+                        android:id="@+id/input_wtk"
+                        />
+
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Deskripsi"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+
+                />
+
+
+    <!--       untuk deskripsi opsional-->
+            <EditText
+                android:layout_marginTop="2dp"
+                android:layout_width="300dp"
+                android:layout_height="200sp"
+                android:hint="Deskripsi tambahan"
+                android:textColor="@color/black"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColorHint="@color/abu"
+
+                android:id="@+id/input_dsk"
+                />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="TAMBAHKAN"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:backgroundTint="@color/biruB"
+
+                android:onClick="btnSimpan"
+                android:id="@+id/btnSimpan"/>
+    </LinearLayout>
+
+</LinearLayout>
