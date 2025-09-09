@@ -29,7 +29,8 @@
                 android:text="Plan &amp; Time"
                 android:textSize="29dp"
                 android:textColor="@color/putih_abu"
-                android:layout_marginTop="38dp"/>
+                android:layout_marginTop="38dp"
+                />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -83,13 +84,13 @@
                     android:background="@color/white" />
 
 
-                    <ListView
-                        android:id="@+id/list_item_view"
+                <ListView
+                    android:id="@+id/list_item_view"
 
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:dividerHeight="1dp"
-                        />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    tools:listitem="@layout/itemlss" />
 
 
             </LinearLayout>
