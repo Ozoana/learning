@@ -1,0 +1,11 @@
+apa itu object?
+
+object adalah data, data yang berisi field/properti/attribut dan method/function/behavior
+
+apa itu class? 
+
+class itu bisa di bilang sebagai cetak bitu/blue print dari object
+object tidak mungkin ada jika tidak ada class
+class juga memiliki properti dan function yang di memiliki object 
+(properti itu mirip seperti variable tapi variable nya nempel/ikut di object)
+dan satu class bisa membuat object tampa batas
