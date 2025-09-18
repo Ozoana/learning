@@ -4,7 +4,7 @@
 //didalam class, kita bisa membuat yang nama nya constructor adalah function yang akan dipanggil saat pertama kali object dibuat
 //mirip seperti function kita bisa memberikan parameter pada construktor 
 //(argumen/Parameter adalah variabel yang ditulis di dalam tanda kurung () ada di pelajaran php dasar) 
-
+// Constructor pada Property :
 class maling{
     var string $nama;
     var string $barang;

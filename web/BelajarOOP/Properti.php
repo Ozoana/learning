@@ -4,9 +4,7 @@
 //Properti/ field / attribut adalah data yang bisa kita sisipkan didalam object
 //tapi sebelum kita bisa memasukan data di field, kita harus mendeklarasikan nya dulu data apa saja yang di miliki oleh object tersebut
 // dengan cara deklarasi di dalam class
-//namun ditempatkan di dalam class dan harus di awali kata kuncti "var"
-//jadi jika variable kan harus tanda $ nah jika properti ini harus var
-
+//namun ditempatkan di dalam class dan di awali kata kunci "var" biasa nya
 class person
 {
     var $name;
@@ -45,4 +43,12 @@ class car {
 class rumah {
     var string $tempat;
     var ?string $alamat = null;
+}
+
+//property dapat juga didefinisikan dengan beberapa cara selain var, contoh : 
+class tess 
+{
+    public string $tessname;
+    string $tessname;
+    private $tessname;
 }
