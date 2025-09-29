@@ -47,7 +47,7 @@ var_dump ($siswa);
 unset($siswa[6]);
 var_dump ($siswa);
 
-//count($nama array) -> untuk mengambil total erapa data di dalam array nya
+//count($nama array) -> untuk mengambil total data di dalam array nya
 var_dump(count($siswa));
 echo "\n";
 
@@ -85,3 +85,14 @@ var_dump($sekolah["tempat"]["jurusan"]);
 $keluarga = ["ayah", "ibu", "kaka1",["saudara1","saudara2"]];
 var_dump ($keluarga);
 var_dump($keluarga[3][1]);
+
+//coba bentuk/implementasi lain
+//khasus : misal ada array yang berisi data 1 sampai 10
+//lalu kita sebagai operatur ingin melihat apakah 7, 8 dan 9 ada di dalam array 10 itu?
+
+echo "\n";
+$tess = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1,];
+var_dump($tess);
+
+$cari = [7,9,8];
+
