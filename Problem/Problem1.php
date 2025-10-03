@@ -8,9 +8,19 @@ $cari = [6,7,8];
 
 foreach ($cari as $A){
     
+    $nomor = false;
+
     foreach ($nilai as $B){
         if ($A == $B ){
-            echo "semua nilai ada";
+                $nomor = true;
         }
+    }
+
+    if ($nomor){
+        echo "semua nya ada\n";
+            break; }
+        else{
+        echo "semua nomor tidak ada\n";
+          break; 
     }
 }

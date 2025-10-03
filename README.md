@@ -1,3 +1,2 @@
-# learning
-maaf pemula, saya baru belajar.
-ehe
+Saya hanyalah seorang pemuda yang masih dalam proses belajar dan masih jauh dari kata "ahli".
+Jika ada kesalahan dalam project ini, atau Anda memiliki solusi yang lebih baik, dengan senang hati saya terbuka untuk koreksi maupun masukan. Saya sangat membutuhkannya untuk terus berkembang.
