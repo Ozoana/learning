@@ -4,11 +4,24 @@
 //tapi bagaimana jika data didalam array nya ada banyak. misal 1 sampai 50
 //itu akan memakan waktu  yang berbeda untuk mencari data nya di dalam array
 
-$nilai = [50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 
- 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 
- 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 
- 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 
- 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-$cari = [33,12,10];
+$mulai = microtime(true);
 
+$angka = [];
+$cari = [12,50,70,900,233];
+for($i = 1; $i<=10000; $i++ ){
+    $angka [] =$i;
+}
 
+foreach($cari as $a){
+    foreach ($angka as $b){
+        if ($a == $b){
+           echo "semua ada\n";
+        }
+    }
+}
+$selesai = microtime(true);
+
+// hitung selisih waktu 
+$lama = $selesai - $mulai;
+
+echo "Waktu eksekusi: " . round($lama, 6) . " detik\n";
