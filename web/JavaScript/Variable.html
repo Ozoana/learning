@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- variable adalah wadah/tempat untuk menyimpan data
+     untuk membuat variable di js perlu menggunakan "var" lalu nama variable nya
+     dan di js ini, variable nya tidak terpaku harus menggunakan satu tipe data, kita bisa mengubah ubah tipe data di variable yang sama
+      -->
+
+    <script>
+        
+        var Namaku;
+        var Tinggal;
+        var Umurku;
+        var Sapa;
+        //saat nya memasukan data dari variable nya 
+
+        Namaku = "daus ";
+        Tinggal="indonesia ";
+        Umurku = " 17 ";
+
+        document.writeln(Namaku + Tinggal + Umurku);
+        document.writeln("<br>");
+        document.writeln(Namaku);
+        document.writeln("<br>");
+        document.writeln(Tinggal);
+        document.writeln("<br>");
+        document.writeln(Umurku);
+        document.writeln("<br>")
+
+        //kita juga bisa mengubah data yang ada di variable terserah kita mau seberapa :
+
+        Sapa = "hai";
+        Sapa = "halo";
+        Sapa = "hi";
+        Sapa = 3;//ini terakhir
+
+        //sebanyak apapun kalian mengubah isi nya, yang bakal di ambil addalah yang terakhir
+        document.writeln(Sapa);
+        document.writeln("<br>")
+        
+        //kita juga bisa menulis variable dengan langsung menulis isi value nya 
+
+        var Aku = "ahmad pirdaus";
+        document.writeln(Aku);
+        document.writeln("<br>")
+
+        //sejak tahun 2015 ke atas, ECMAscript membuat kata kunci baru untuk variable, bisa menggunakan let dan const 
+        //dan kata kunci var sekarang kurang di rekoemndasikan, karena ada masalah dengan var (akan di bahas nanti)
+
+        //menggunakan let : 
+        let fullName = "aku ahmad pirdaus";
+        document.writeln(fullName)
+
+        //menggunakan const :
+        const NameFull= "aku daus";
+        //tapi const ini data nya tidak bisa di ubah, cuman 1 saja
+        //beda dengan let, yang dimana let itu digunakan untuk mengganti var, jadi jika var bisa lakukan, maka let juga
+
+    </script>
+</body>
+</html>

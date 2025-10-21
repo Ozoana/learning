@@ -1,0 +1,4 @@
+javascipt mendukung operator matematika seperti :
+operator aritmatika
+operator unary
+dll
