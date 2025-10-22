@@ -11,24 +11,14 @@ $mulai = microtime(true);
 $nilai = [10,9,8,7,6,5,4,3,2,1];
 $cari = [6,7,8];
 
-foreach ($cari as $A){
-    
-    $nomor = false;
-
-    foreach ($nilai as $B){
-        if ($A == $B ){
-                $nomor = true;
+foreach($cari as $a){
+    foreach ($nilai as $b){
+        if ($a == $b){
+           echo "semua ada\n";
         }
     }
-
-    if ($nomor){
-        echo "semua nya ada\n";
-            break; }
-        else{
-        echo "semua nomor tidak ada\n";
-          break; 
-    }
 }
+
 
 $selesai = microtime(true);
 
