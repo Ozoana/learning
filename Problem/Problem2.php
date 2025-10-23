@@ -8,17 +8,19 @@ $mulai = microtime(true);
 
 $angka = [];
 $cari = [12,50,70,900,233];
+
 for($i = 1; $i<=10000; $i++ ){
-    $angka [] =$i;
+    $angka [$i] = true;//hashtable jadi solusi nya
 }
 
-foreach($cari as $a){
-    foreach ($angka as $b){
-        if ($a == $b){
-           echo "semua ada\n";
-        }
+foreach ($cari as $A){
+    if(isset($angka[$A])){
+        echo "$A ada\n";
+    }else{
+        echo "$A tidak ada\n";
     }
 }
+
 $selesai = microtime(true);
 
 // hitung selisih waktu 
