@@ -30,13 +30,14 @@ require "./init.php";
 
 // aspian ganteng //
 
-$datah = generate(100000);
-$to_found = generate(10000); // [2, 74,1214124, 2323];
-$founds = [];
+$datah = generate(900000);
+$to_found = generate(1000); // [2, 74,1214124, 2323];
 
-echo "Data lenght " . count($datah) . "\n";
+echo "Data lenght\t: " . count($datah) . "\n";
+echo "To Found\t: " . count($to_found) . "\n";
 
-$start = microtime(true);
+$founds1 = [];
+$start1 = microtime(true);
 
 foreach ($datah as $i) {
     foreach ($to_found as $j) {
@@ -46,7 +47,21 @@ foreach ($datah as $i) {
     }
 }
 
-echo "Found: " . count($founds) . " items\n";
+$duration1 = microtime(true) - $start1;
 
-$duration = microtime(true) - $start;
-echo "Execution time: " . round($duration, 6) . " seconds\n";
+$founds2 = [];
+$start2 = microtime(true);
+$datah2 = array_fill_keys($datah, null);
+
+foreach ($to_found as $i) {
+        if (isset($datah2[$i])) {
+        $founds2[] = $i;
+    }
+}
+
+$duration2 = microtime(true) - $start2;
+
+
+echo "Found: " . count($founds) . " items\n";
+echo "1. Execution time: " . round($duration1, 6) . " seconds\n";
+echo "2. Execution time: " . round($duration2, 6) . " seconds\n";
