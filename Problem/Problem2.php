@@ -10,7 +10,7 @@ $angka = [];
 $cari = [12,50,70,900,233];
 
 for($i = 1; $i<=10000; $i++ ){
-    $angka [$i] = true;//hashtable jadi solusi nya
+    $angka [$i] = true;//hashtable jadi solusi nya. ini maksud nya setelah melakukan perulangan 1 sampai 10000. lalu di masukkan ke array, dan di pasangi value true, jadi key nya 1 sampe 10000
 }
 
 foreach ($cari as $A){
