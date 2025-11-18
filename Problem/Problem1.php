@@ -1,11 +1,7 @@
 <?php
-
-// require "./init.php";
-
 //misal didalam array ada data 1 sampai 10 
-//lalu aku ingin mengetahui apakah nilai 6, 7 dan 8 ada didalam array itu
+//lalu aku ingin mengetahui apakah nilai 6, 7 dan 8 ada didalam array 
 
-// daus
 $mulai = microtime(true);
 
 $nilai = [10,9,8,7,6,5,4,3,2,1];
@@ -26,26 +22,3 @@ $selesai = microtime(true);
 $lama = $selesai - $mulai;
 
 echo "Waktu eksekusi: " . number_format($lama, 6, '.', '') . " detik\n";
-
-// aspian
-
-// $datah = generate(100000);
-// $to_found = generate(10000); // [2, 74,1214124, 2323];
-// $founds = [];
-
-// echo "Data lenght " . count($datah) . "\n";
-
-// $start = microtime(true);
-
-// foreach ($datah as $i) {
-//     foreach ($to_found as $j) {
-//         if ($i === $j) {
-//             $founds[] = $i;
-//         }
-//     }
-// }
-
-// echo "Found: " . count($founds) . " items\n";
-
-// $duration = microtime(true) - $start;
-// echo "Execution time: " . round($duration, 6) . " seconds\n";
