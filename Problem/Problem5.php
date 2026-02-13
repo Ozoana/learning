@@ -14,7 +14,6 @@ $handlers = [
     'py'  => 'handle_py'
 ];
 
-if(isset)
 
 function handle_png(){}
 function handle_pdf(){}
