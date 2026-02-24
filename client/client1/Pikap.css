@@ -129,6 +129,39 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
     }
 }
 
+#mobileMenu {
+    background: var(--dark); /* Pastikan background gelap agar teks putih kelihatan */
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+#mobileMenu .nav-link-custom {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #222; /* Beri garis halus antar menu */
+}
+
+/* Sembunyikan menu mobile secara default */
+.mobile-menu-collapse {
+    display: none; 
+    overflow: hidden;
+    background: var(--dark);
+    padding-bottom: 20px;
+}
+
+/* Class ini akan ditambahkan oleh JS saat tombol diklik */
+.mobile-menu-collapse.show {
+    display: block !important;
+}
+
+/* Memastikan link mobile terlihat jelas */
+.mobile-menu-collapse .nav-link-custom {
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+    display: block;
+    width: 100%;
+}
 
 /* ─── HERO ─── */
 #home {
@@ -401,19 +434,6 @@ section { padding: 100px 0; }
     letter-spacing: 2px;
 }
 
-
-/* ─── CTA ─── */
-.cta-section {
-    background: var(--accent);
-    padding: 80px 0;
-}
-.cta-section h2 {
-    color: var(--dark);
-    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-}
-.cta-section p { color: rgba(14,14,14,0.65); }
-
-
 /* ─── CONTACT ─── */
 #contact { background: var(--dark); }
 .contact-card {
@@ -572,3 +592,4 @@ section {
     transform: none !important;
     transition: opacity 0.5s ease-in-out;
 }
+

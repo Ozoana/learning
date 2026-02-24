@@ -36,54 +36,39 @@
 
     <!-- NAVBAR -->
     <nav class="navbar-custom">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center w-100">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <a href="#home" class="text-decoration-none d-flex align-items-center gap-2">
+                <span style="font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;letter-spacing:2px;">PIKAPWEB</span>
+            </a>
 
-                <!-- Brand -->
-                <a href="#home" class="text-decoration-none d-flex align-items-center gap-2">
-                    <span style="font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;letter-spacing:2px;">PIKAPWEB</span>
-                </a>
+            <button class="navbar-toggler d-lg-none" type="button" id="navToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Hamburger (mobile) -->
-                <button class="navbar-toggler d-lg-none" type="button" id="navToggle" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Nav links (desktop) -->
-                <div class="d-none d-lg-flex align-items-center gap-1">
-                    <a href="#home" class="nav-link-custom">Home</a>
-                    <a href="#about" class="nav-link-custom">About</a>
-                    <a href="#product" class="nav-link-custom">Product</a>
-                    <a href="#contact" class="nav-link-custom">Contact</a>
-                </div>
-
-                <!-- Lang (desktop) -->
-                <div class="d-none d-lg-flex gap-2">
-                    <a href="#" class="nav-link-custom lang-btn">EN</a>
-                    <a href="#" class="nav-link-custom lang-btn">ID</a>
-                </div>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="#home" class="nav-link-custom">Home</a>
+                <a href="#about" class="nav-link-custom">About</a>
+                <a href="#product" class="nav-link-custom">Product</a>
+                <a href="#contact" class="nav-link-custom">Contact</a>
             </div>
+        </div>
 
-            <!-- Mobile Menu (hidden by default, toggled by pikap.js) -->
-            <div id="mobileMenu" style="display:none; padding-top:16px; border-top:1px solid #222; margin-top:16px;">
-                <div class="d-flex flex-column gap-1">
-                    <a href="#home" class="nav-link-custom" onclick="closeMobileMenu()">Home</a>
-                    <a href="#about" class="nav-link-custom" onclick="closeMobileMenu()">About</a>
-                    <a href="#product" class="nav-link-custom" onclick="closeMobileMenu()">Product</a>
-                    <a href="#contact" class="nav-link-custom" onclick="closeMobileMenu()">Contact</a>
-                </div>
-                <div class="d-flex gap-2 mt-3">
-                    <a href="#" class="nav-link-custom lang-btn">EN</a>
-                    <a href="#" class="nav-link-custom lang-btn">ID</a>
-                </div>
-                <div class="d-flex gap-3 mt-3 pb-2">
-                    <a href="tel:+62123456789" style="color:var(--muted);text-decoration:none;font-size:.82rem;">
-                        <i class="bi bi-telephone me-1" style="color:var(--accent)"></i>+62 123456789
-                    </a>
+        <div id="mobileMenu" class="mobile-menu-collapse">
+            <div class="d-flex flex-column gap-2 mt-3">
+                <a href="#home" class="nav-link-custom">Home</a>
+                <a href="#about" class="nav-link-custom">About</a>
+                <a href="#product" class="nav-link-custom">Product</a>
+                <a href="#contact" class="nav-link-custom">Contact</a>
+                <hr style="border-color: #333;">
+                <div class="d-flex gap-3">
+                    <a href="#" class="lang-btn">EN</a>
+                    <a href="#" class="lang-btn">ID</a>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <main id="content-area">
 
